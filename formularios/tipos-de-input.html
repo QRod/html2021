@@ -1,99 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <form>
-        <input>
-        <!-- BÁSICO FORMUARIOS -->
-        <input type="button" value="Enviar Input"> <!-- No sirve para enviar formulario, es más usado para conjuntar acciones con código JS -->
-        <input type="submit" value="Enviar Input"> <!-- Si envía formulario, funciona igual que button -->
-        <button>Enviar Button</button>  <!-- Puede enviar formulario y reinicia la página -->
-        <!-- FECHAS -->
-        <input type="date"> <!-- para fecha -->
-        <input type="datatime-local"> <!-- para fecha y hora pero no funciona en firefox -->
-        <input type="date">
-        <input type="time"> <!-- con estas dos etiquetas se suple la necesidad anterior y funciona en firefox -->
-        <input type="month">    <!-- para mes -->
-        <input type="week">     <!-- semanas -->
-        
-        <!-- MODIFICADORES DE ACCESIBILIDAD DE TECLADO -->
-        <div>
-            <label>search
-                <input type="search">
-            </label>
-        </div>
-        <div>
-            <label>teléfono
-                <input type="teléfono">
-            </label>
-        </div>
-        <div>
-            <label>email
-                <input type="email">
-            </label>
-        </div>
-        <div>
-            <label>password
-                <input type="password">
-            </label>
-        </div>
-        <div>
-            <label>url
-                <input type="url">
-            </label>
-        </div>
-        
-        <!-- VARIOS -->
-        <input type="color">
-        <input type="number">
-        <input type="range" step="5" min="0" max="50">
-        <input type="reset">
-        <input type="text">
-        <input type="hidden">
-        
-        <!-- SELECCIONADORES -->
-        <h2>Género</h2>
-        <label>Masculino
-            <input type="radio" name="gender" value="masculino">
-        </label>
-        <label>Femenino
-            <input type="radio" name="gender" value="femenino">
-        </label>
-        <label>Otro
-            <input type="radio" name="gender" value="otro" checked>
-        </label>
+      <input />
+      <!-- BÁSICO FORMUARIOS -->
+      <input type="button" value="Enviar Input" />
+      <!-- No sirve para enviar formulario, es más usado para conjuntar acciones con código JS -->
+      <input type="submit" value="Enviar Input" />
+      <!-- Si envía formulario, funciona igual que button -->
+      <button>Enviar Button</button>
+      <!-- Puede enviar formulario y reinicia la página -->
+      <!-- FECHAS -->
+      <input type="date" />
+      <!-- para fecha -->
+      <input type="datatime-local" />
+      <!-- para fecha y hora pero no funciona en firefox -->
+      <input type="date" />
+      <input type="time" />
+      <!-- con estas dos etiquetas se suple la necesidad anterior y funciona en firefox -->
+      <input type="month" />
+      <!-- para mes -->
+      <input type="week" />
+      <!-- semanas -->
 
-        <h2>Opciones de miltiple selección</h2>
-        <label>opción1
-            <input type="checkbox" name="languajes" value="opción1">
+      <!-- MODIFICADORES DE ACCESIBILIDAD DE TECLADO -->
+      <div>
+        <label
+          >search
+          <input type="search" />
         </label>
-        <label>opción2
-            <input type="checkbox" name="languajes" value="opción2">
+      </div>
+      <div>
+        <label
+          >teléfono
+          <input type="teléfono" />
         </label>
-        <label>opción3
-            <input type="checkbox" name="languajes" value="opción3" checked>
+      </div>
+      <div>
+        <label
+          >email
+          <input type="email" />
         </label>
+      </div>
+      <div>
+        <label
+          >password
+          <input type="password" />
+        </label>
+      </div>
+      <div>
+        <label
+          >url
+          <input type="url" />
+        </label>
+      </div>
 
-        <!-- SELECCIONAR UNA SOLA OPCIÓN -->
-        <select name="lenguajes">
-            <option value="html">HTML</option>
-            <option value="css">CSS</option>
-            <option value="js">JS</option>
-        </select>
+      <!-- VARIOS -->
+      <input type="color" />
+      <input type="number" />
+      <input type="range" step="5" min="0" max="50" />
+      <input type="reset" />
+      <input type="text" />
+      <input type="hidden" />
 
-        <!-- SELECCIONAR MULTIPLES OPCIONES -->
-        <select name="lenguajes" multiple>
-            <option value="html">HTML</option>
-            <option value="css">CSS</option>
-            <option value="js">JS</option>
-        </select>
+      <!-- SELECCIONADORES -->
+      <h2>Género</h2>
+      <label
+        >Masculino
+        <input type="radio" name="gender" value="masculino" />
+      </label>
+      <label
+        >Femenino
+        <input type="radio" name="gender" value="femenino" />
+      </label>
+      <label
+        >Otro
+        <input type="radio" name="gender" value="otro" checked />
+      </label>
 
-        
+      <h2>Opciones de miltiple selección</h2>
+      <label
+        >opción1
+        <input type="checkbox" name="languajes" value="opción1" />
+      </label>
+      <label
+        >opción2
+        <input type="checkbox" name="languajes" value="opción2" />
+      </label>
+      <label
+        >opción3
+        <input type="checkbox" name="languajes" value="opción3" checked />
+      </label>
+
+      <!-- SELECCIONAR UNA SOLA OPCIÓN -->
+      <select name="lenguajes">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="js">JS</option>
+      </select>
+
+      <!-- SELECCIONAR MULTIPLES OPCIONES -->
+      <select name="lenguajes" multiple>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="js">JS</option>
+      </select>
+
+      <!-- SELECT AVANZADO -->
+      <select name="mascotas" multiple>
+        <optgroup label="4 patas">
+          <option value="perro">perro</option>
+          <option value="gato">gato</option>
+          <option value="conejo">conejo</option>
+        </optgroup>
+        <optgroup label="2 patas">
+          <option value="canario">canario</option>
+          <option value="pajaro">pajaro</option>
+        </optgroup>
+      </select>
+
+      <!-- DATALIST -->
+      <input type="list" list="mascotas" />
+      <datalist id="mascotas">
+        <option value="perro">perro</option>
+        <option value="gato">gato</option>
+        <option value="conejo">conejo</option>
+        <option value="canario">canario</option>
+        <option value="pajaro">pajaro</option>
+      </datalist>
+
+      <!-- VARIOS -->
+      <fieldset>
+          <legend>Datos Personales</legend>
+          <div>
+              <label for="name">Nombre</label>
+              <input type="text" id="name">
+          </div>
+          <div>
+              <label for="surname">Apellidos</label>
+              <input type="text" id="surname">
+          </div>
+          <!-- SUBIR ARCHIVOS -->
+          <div>
+            <input type="file">
+          </div>
+          <div>
+              <meter id="fuel" min="0" max="100" value="50" low="20" high="75" optimum="50"> 
+
+              </meter>
+          </div>
+          <div>
+              <label for="task">tarea 1</label>
+              <progress id="task" max="100" value="50 "> </progress>
+
+          </div>
+          <div>
+              <label for="message">Mensaje</label>
+              <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          </div>
+
+      </fieldset>
     </form>
-        
-</body>
+  </body>
 </html>
